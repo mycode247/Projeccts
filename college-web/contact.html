@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5a1716955.js" crossorigin="anonymous"></script>
+    <title>College</title>
+</head>
+<body>
+
+    <!-------------HEADER-------------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+       
+        <h1>Contact Us</h1>
+    </section>
+
+<!-----------------------CONTACT US CONTENT----------------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1FwJRQ0CrLfmmpfAmaseX-XfgZXk" width="640" height="480"></iframe>
+    
+</section>
+<SECTion class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-house-user"></i>
+                <span>
+                    <h3>Bagnan Bazar Road near ICICI Bank</h3>
+                    <p>Bagnan,Howrah,West Bengal</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h3>7070813625</h3>
+                    <p>Monday to Friday from 10AM to 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <span>
+                    <h3>info@example.com</h3>
+                    <p>Email us you query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="contact-form.php" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="text" name="subject" placeholder="Enter subject" required>
+                <textarea  rows="8" name="message" placeholder="Enter message here"></textarea>
+                <button type="submit" class="hero-btn red-btn"  >Message Now</button>
+            </form>
+        </div>
+    </div>
+</SECTion>
+
+
+<!---------------FOOTER---------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum <br/> voluptates animi, nesciunt repellendus quod saepe, pariatur ducimus, et dolore ipsam illo nulla <br/> facilis magnam odio eveniet quae dolores minima!</p>
+
+    <div class="footer-icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+    </div>
+    <p>made by @Tanmoy</p>
+</section>
+
+
+    <!---JAVASCRIPT FOR TOGGLE MENU---->
+
+<script>
+    var navlinks = document.getElementById("navlinks")
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
